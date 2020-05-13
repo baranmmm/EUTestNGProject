@@ -74,13 +74,13 @@ public class JavaScriptExecutorDemo {
     }
 
     @Test
-    public void scrollDownandUp() {
+    public void scrollDownandUp() throws InterruptedException {
         driver.get("http://practice.cybertekschool.com/infinite_scroll");
         JavascriptExecutor jse = (JavascriptExecutor) driver;
 
 
         for (int i = 0; i < 100; i++) {
-            //Thread.sleep(50);
+            Thread.sleep(50);
             jse.executeScript("window.scrollBy(0, 250);");
 
         }
