@@ -42,9 +42,9 @@ public class TestCase052 {
     @AfterMethod
     public void tearDown() {
         Sleeper.sleep(2);
-//        driver.findElement(By.xpath("//button[@title=\"close\"]")).click();
-//        Sleeper.sleep(2);
-//        driver.quit();
+        driver.findElement(By.xpath("//button[@title=\"close\"]")).click();
+        Sleeper.sleep(2);
+        driver.quit();
     }
 
     @Test
@@ -116,8 +116,9 @@ public class TestCase052 {
 
 
         //Clicking on Add Event button
-        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@data-id=\"2475\"]")))).click();
-
+        wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//a[@data-id=\"2475\"]"))));
+        Sleeper.sleep(1);
+        driver.findElement(By.xpath("//a[@data-id=\"2475\"]")).click();
 
         //Writing of "Car Maintenance Planning Meeting" to title textbox
         driver.findElement(By.name("oro_calendar_event_form[title]")).sendKeys("Car Maintenance Planning Meeting");
