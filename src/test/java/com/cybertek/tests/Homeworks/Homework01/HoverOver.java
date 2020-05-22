@@ -1,4 +1,4 @@
-package com.cybertek.tests.Homework;
+package com.cybertek.tests.Homeworks.Homework01;
 
 import com.cybertek.utilities.Sleeper;
 import com.cybertek.utilities.WebDriverFactory;
@@ -6,13 +6,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class HoverOver {

@@ -1,4 +1,4 @@
-package com.cybertek.tests.Homework;
+package com.cybertek.tests.Homeworks.Homework01;
 
 import com.cybertek.utilities.Sleeper;
 import com.cybertek.utilities.WebDriverFactory;
@@ -84,7 +84,7 @@ public class TestCase01_05 {
         Sleeper.sleep(1);
         driver.findElement(By.name("email")).sendKeys(fk.internet().emailAddress());
         Sleeper.sleep(1);
-        driver.findElement(By.name("password")).sendKeys("12345678");
+        driver.findElement(By.name("driver_password")).sendKeys("12345678");
         Sleeper.sleep(1);
         driver.findElement(By.name("phone")).sendKeys("555-555-5555");
         Sleeper.sleep(1);

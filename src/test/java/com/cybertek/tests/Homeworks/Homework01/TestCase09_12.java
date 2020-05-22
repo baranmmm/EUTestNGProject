@@ -1,4 +1,4 @@
-package com.cybertek.tests.Homework;
+package com.cybertek.tests.Homeworks.Homework01;
 
 import com.cybertek.utilities.Sleeper;
 import com.cybertek.utilities.WebDriverFactory;

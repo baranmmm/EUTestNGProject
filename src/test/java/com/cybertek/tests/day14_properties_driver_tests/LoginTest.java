@@ -13,7 +13,7 @@ public class LoginTest extends TestBase {
         driver.get(ConfigurationReader.get("url"));
 
         driver.findElement(By.id("prependedInput")).sendKeys(ConfigurationReader.get("driver_username"));
-        driver.findElement(By.id("prependedInput2")).sendKeys(ConfigurationReader.get("password") + Keys.ENTER);
+        driver.findElement(By.id("prependedInput2")).sendKeys(ConfigurationReader.get("driver_password") + Keys.ENTER);
 
     }
 }
