@@ -17,7 +17,7 @@ public class FileUploadTest {
 
     @AfterMethod
     public void tearDown() {
-        Sleeper.sleep(0.5);
+        Sleeper.sleep((int) 0.5);
         driver.quit();
     }
 

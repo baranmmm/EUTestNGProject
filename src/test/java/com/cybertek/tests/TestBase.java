@@ -52,6 +52,7 @@ public class TestBase {
     @BeforeMethod
     @Parameters("env")
     public void setUpMethod(@Optional String env){
+        System.out.println("env = " + env);
 
         //if env variable is null use default url
         if(env==null){
@@ -89,7 +90,7 @@ public class TestBase {
         }
         //close driver
         Thread.sleep(2000);
-        //Driver.closeDriver();
+        Driver.closeDriver();
     }
 
     @AfterTest
